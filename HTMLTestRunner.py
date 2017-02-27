@@ -889,11 +889,11 @@ class _TestResult(TestResult):
     ##### This method takes screenshot of the web browser as base64 string and returns it for add to test report.
     ##### No configuration needed.
     def generateTestScreenshot(self, test):
-        global myimage
+        global myImage
         preText = 'data:image/png;base64,'
-        base64image = self.driver.get_screenshot_as_base64()
-        myimage = pre + base64scr
-        return myimage
+        base64Image = self.driver.get_screenshot_as_base64()
+        myImage = preText + base64Image
+        return myImage
 
 
 
